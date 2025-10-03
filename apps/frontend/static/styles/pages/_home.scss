@@ -1,0 +1,28 @@
+/*
+ * Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC-BY-NC-SA 4.0).
+ * See the LICENSE file in the project root for the full license text.
+ */
+
+
+[data-page="home-page"]{
+  background:linear-gradient(to bottom, #33cefa 0%, #009AA4 100%);
+  background-size: 100% 100%;
+}
+.home-page {
+  &.hero{
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:50%;
+    height:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+

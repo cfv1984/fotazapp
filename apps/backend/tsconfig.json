@@ -1,0 +1,11 @@
+{
+  "extends": "../../common/configs/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@project/common-configs": [
+        "../../common/configs/env.ts"
+      ]
+    }
+  }
+}

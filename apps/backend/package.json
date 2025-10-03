@@ -1,0 +1,16 @@
+{
+  "name": "@project/backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "develop": "bun run --watch server.ts",
+    "start": "bun run server.ts",
+    "build": "bun build server.ts --compile --outfile dist/backend"
+  },
+  "dependencies": {
+    "@project/common-configs": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.22"
+  }
+}

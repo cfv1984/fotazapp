@@ -1,0 +1,19 @@
+{
+  "name": "fotaza",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "common/*"
+  ],
+  "scripts": {
+    "develop:be": "bun run --filter '@project/backend' develop",
+    "develop:fe": "bun run --filter '@project/frontend' develop",
+    "develop": "concurrently --kill-others --kill-timeout=100 -n \"be,fe\" \"bun run develop:be\" \"bun run develop:fe\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "sass": "^1.93.2"
+  }
+}

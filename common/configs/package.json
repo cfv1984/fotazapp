@@ -1,0 +1,6 @@
+{
+  "name": "@project/common-configs",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": "./env.ts"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@project/frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "develop:css": "sass --watch static:static",
+    "develop:js": "bun run --watch server.ts",
+    "develop": "concurrently -n \"css,js\" -k \"bun run develop:css\" \"bun run develop:js\"",
+    "start": "bun run server.ts",
+    "build": "bun build server.ts --compile --outfile dist/frontend"
+  },
+  "dependencies": {
+    "@project/common-configs": "workspace:*",
+    "@project/template-fns": "workspace:*",
+    "concurrently": "^9.2.1",
+    "sass": "^1.93.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.22"
+  }
+}

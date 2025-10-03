@@ -1,0 +1,11 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "objectWrap": "collapse",
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "semi": true
+}

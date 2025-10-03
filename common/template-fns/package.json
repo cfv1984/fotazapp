@@ -1,0 +1,16 @@
+{
+  "name": "@project/template-fns",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pretty": "^2.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "pretty": "^2.0.0"
+  }
+}
