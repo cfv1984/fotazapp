@@ -6,9 +6,12 @@
     "common/*"
   ],
   "scripts": {
+    "start:be": "bun run --filter '@project/backend' start",
+    "start:fe": "bun run --filter '@project/frontend' start",
     "develop:be": "bun run --filter '@project/backend' develop",
     "develop:fe": "bun run --filter '@project/frontend' develop",
-    "develop": "concurrently --kill-others --kill-timeout=100 -n \"be,fe\" \"bun run develop:be\" \"bun run develop:fe\""
+    "develop": "concurrently --kill-others --kill-timeout=100 -n \"be,fe\" \"bun run develop:be\" \"bun run develop:fe\"",
+    "start": "concurrently --kill-others --kill-timeout=100 -n \"be,fe\" \"bun run start:be\" \"bun run start:fe\""
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
