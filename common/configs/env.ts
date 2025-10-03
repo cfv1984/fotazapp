@@ -3,7 +3,10 @@
  * See the LICENSE file in the project root for the full license text.
  */
 
+import pkg from "../../package.json";
+
 const ENV = {
+  VERSION: pkg.version??'0.0.1',
   NODE_ENV: process.env.NODE_ENV ?? "production",
   FRONTEND_PORT: Number(process.env.FRONTEND_PORT ?? 8080),
   BACKEND_PORT: Number(process.env.BACKEND_PORT ?? 8081),
