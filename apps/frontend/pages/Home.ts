@@ -7,7 +7,7 @@ import { html, body, head, meta, img, main, classNames } from "@project/template
 import Title from "./common/Title";
 import { NODE_ENV } from "@project/common-configs";
 import StyleFile from "./common/StyleFile";
-
+import {VERSION} from "@project/common-configs";
 type PageProps = {
   response: string;
 };
@@ -29,7 +29,8 @@ export default function Home({ response }: PageProps) {
     ]),
   ], {
     lang:"es-AR",
-    "data-page":"home-page"
+    "data-page":"home-page",
+    "data-page-rev": VERSION
   });
 }
 
